@@ -1,0 +1,127 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: "Arial Narrow Bold", sans-serif;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+}
+
+.whether-app {
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  width: 300px;
+}
+
+.title {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.search {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input {
+  border-radius: 8px;
+  padding: 10px;
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 16px;
+  width: 180px;
+}
+
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.search-btn {
+  padding: 10px 15px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  transition: 0.3s;
+}
+
+.search-btn:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+  transform: scale(1.05);
+}
+
+.img-card {
+  margin-top: 20px;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+img {
+  width: 80%;
+  height: auto;
+}
+
+.temp {
+  color: white;
+  font-size: 34px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.city {
+  color: white;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 10px;
+  font-style: italic;
+}
+
+.wind {
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.display {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+}
+
+.error {
+  display: none;
+  color: #ff6961;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20px;
+  font-weight: bold;
+}
